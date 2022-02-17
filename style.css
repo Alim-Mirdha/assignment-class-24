@@ -1,0 +1,203 @@
+/* ===================================
+       DEFAULT CSS start HERE 
+====================================== */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  Spartan, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+form:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+
+
+/* ===================================
+       DEFAULT CSS END HERE 
+====================================== */
+/* ==========================================
+       DEFAULT WEBSITE DESIGN CSS START HERE 
+============================================= */
+.main-button {
+    color: #5f5ed6;
+    font-weight: 600;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all .5s;
+    overflow: hidden;
+}
+.main-button:hover{
+    color: #fff;
+}
+.main-button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #7869fa;
+    border-radius: 20px;
+    z-index: -1;
+    transition: .5s;
+}
+.main-button:hover::before{
+    width: 100%;
+     
+}
+/* ==========================================
+       DEFAULT WEBSITE DESIGN CSS END HERE 
+============================================= */
+/* ===================================
+       1.HEADER AREA START HERE
+====================================== */
+.header-area{
+    background-color: #E7E6E6;
+}
+.header-area .navbar {
+    padding: 0;
+}
+.logo img {
+    width: 89px;
+}
+.main-menu ul {
+    margin-right: 86px;
+}
+.main-menu ul li {
+    margin-right: 20px;
+    position: relative;
+}
+.main-menu ul li a {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 59px;
+    color: #D2D3CD;
+    position: relative;
+}
+.main-menu ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9D8FEC;
+    transition: .5s;
+}
+.main-menu ul li a:hover{
+    color: #5A18C6 !important;
+}
+.main-menu ul li a:hover::before{
+    width: 100%;
+   
+}
+.main-menu ul li a.active{
+    color: #5A18C6 !important;
+    position: relative;
+}
+.main-menu ul li a.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #9D8FEC;
+}
+/* DROPDOWN MENU */
+.main-menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    height: 84px;
+    transition: .5s;
+    text-align: center;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+.main-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.main-menu ul li ul li{
+    margin: 0;
+}
+.main-menu ul li ul a {
+    color: #fff;
+    padding: 0px 15px;
+    display: inline-block;
+    background: red;
+    line-height: 46px;
+    margin-top: 17px;
+}
+.main-menu ul li ul a:hover{
+    color: #fff !important;
+}
+.main-menu ul li ul a::before{
+    content: "";
+    background-color: transparent;
+}
+/* ===================================
+       1.HEADER AREA END HERE
+====================================== */
+/* ===================================
+       2.BANNER AREA START HERE
+====================================== */
+.banner-area {
+    background-color: rgb(237, 246, 255);
+    height: 576px;
+}
+.banner-img {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: -122px;
+    right: -66px;
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner-text {
+    margin-top: -139px;
+}
+.banner-text h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 42px;
+}
+.banner-text p {
+    color: #8295BD;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+/* ===================================
+       2.BANNER AREA END HERE
+====================================== */
